@@ -1,15 +1,140 @@
-header {
-    color: #267c01;
-    font-family: Arial, Helvetica, sans-serif;
+
+body {
+    font-family: arial, sans-serif;
+    background-color: #ffffff;
+    color: #333;
+}
+
+.navegacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #ffffff;
+    width: 100%;
+}
+
+.logo-contenedor {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-img {
+    height: 50px;
+    width: auto;
+    display: block;
+}
+
+.logo-texto {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2b2b2b;
+    font-family: 'Arial', sans-serif;
+}
+
+.navegacion-links {
+    display: flex;
+    list-style: none;
+    gap: 35px;
+}
+
+.navegacion-links a {
+    text-decoration: none;
+    color: #444444;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navegacion-links a:hover {
+    color: #2e7d32;
+}
+
+.hero-banner {
+    background-image: url('../Imagenes/Banner.png');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
 }
 
+.hero-content {
+    color: #ffffff;
+}
+
+.hero-content h1 {
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 18px;
+}
+
+
+
 img {
-    width: 100px;
-    height: 100px;
+width: 100%;
+height: auto;
+border-radius: 10px;
+margin-bottom: 15px;
+}
+
+@media (min-width: 768px) {
+.contenedor {
+grid-template-columns: 1fr 1fr;
+}
+}
+
+@media (min-width: 768px) {
+.contenedor {
+grid-template-columns: 1fr 1fr;
+}
+}
+
+.productos-destacados {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+
+.card {
+    background-color: #e1ede0f;
     border-radius: 20px;
 }
 
-a {
-    color: #267c01;
+.card img {
+    width: 100%;
+    height: 250px;
 }
+
+.card {
+background-color:#e1ede0;
+color: white;
+padding: 40px;
+text-align: center;
+border-radius: 10px;
+font-size: 1.2 rem;
+font-weight: bold;
+}
+
+.card {
+background : linear-gradient (135 deg , #3b82f6 , #93afec);
+box-shadow: 0 4px 6px rgba (0, 0, 0, 0.1);
+transition : transform 0.3s ease , box -shadow 0.3s ease;
+}
+.card:hover {
+transform : scale (1.03);
+box-shadow: 0 10px 15px rgba (0, 0, 0, 0.15);
+}
+
