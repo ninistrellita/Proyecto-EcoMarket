@@ -1,8 +1,7 @@
-
 body {
     font-family: arial, sans-serif;
     background-color: #ffffff;
-    color: #333;
+    color: #000500;
 }
 
 .navegacion {
@@ -29,7 +28,7 @@ body {
 .logo-texto {
     font-size: 24px;
     font-weight: bold;
-    color: #2b2b2b;
+    color: #2e7d32;
     font-family: 'Arial', sans-serif;
 }
 
@@ -77,64 +76,79 @@ body {
     font-size: 18px;
 }
 
+@media (min-width: 768px) {
+    .contenedor {
+        grid-template-columns: 1fr 1fr;
+    }
+}
 
+@media (min-width: 768px) {
+    .contenedor {
+        grid-template-columns: 1fr 1fr;
+    }
+}
 
 img {
-width: 100%;
-height: auto;
-border-radius: 10px;
-margin-bottom: 15px;
+    max-width: 100%;
 }
-
-@media (min-width: 768px) {
-.contenedor {
-grid-template-columns: 1fr 1fr;
-}
-}
-
-@media (min-width: 768px) {
-.contenedor {
-grid-template-columns: 1fr 1fr;
-}
-}
-
-.productos-destacados {
+.contenedor-items {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(3,1fr);
     gap: 30px;
     padding: 20px;
     max-width: 1200px;
     margin: 20px auto;
+    border-radius: 10px;
 }
 
-
-.card {
-    background-color: #e1ede0f;
-    border-radius: 20px;
+.item {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
 }
 
-.card img {
+.item img {
     width: 100%;
-    height: 250px;
+    height: auto;
+    border: 10px 10px;
+    transition: all .5s;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
-.card {
-background-color:#e1ede0;
-color: white;
-padding: 40px;
-text-align: center;
-border-radius: 10px;
-font-size: 1.2 rem;
-font-weight: bold;
+.item:hover img {
+    transform: scale(1.2);
 }
 
-.card {
-background : linear-gradient (135 deg , #3b82f6 , #93afec);
-box-shadow: 0 4px 6px rgba (0, 0, 0, 0.1);
-transition : transform 0.3s ease , box -shadow 0.3s ease;
+.info-producto {
+    padding: 15px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
-.card:hover {
-transform : scale (1.03);
-box-shadow: 0 10px 15px rgba (0, 0, 0, 0.15);
+
+.info-producto button {
+    border: none;
+    background: none;
+    background-color: #b7d2b6;
+    padding: 15px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 1s ease;
 }
+
+.info-producto button:hover {
+    background-color: #63a355;
+    transform: scale(1.1)
+
+}
+
+footer {
+    text-align: center;
+}
+
+.item-imagen {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 10%;
+}
+
 
