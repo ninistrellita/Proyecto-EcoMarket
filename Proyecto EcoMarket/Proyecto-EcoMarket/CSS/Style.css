@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: arial, sans-serif;
     background-color: #ffffff;
@@ -38,9 +44,9 @@ body {
     gap: 35px;
 }
 
-.navegacion-links a {
+.navegacion-links a  {
     text-decoration: none;
-    color: #444444;
+    color: #000000;
     font-size: 16px;
     font-weight: 500;
     transition: color 0.3s ease;
@@ -51,7 +57,7 @@ body {
 }
 
 .hero-banner {
-    background-image: url('../Imagenes/Banner.png');
+    background-image: url('../Imagenes/banner.png');
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -91,6 +97,7 @@ body {
 img {
     max-width: 100%;
 }
+
 .contenedor-items {
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -100,7 +107,6 @@ img {
     margin: 20px auto;
     border-radius: 10px;
 }
-
 .item {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
 }
@@ -122,14 +128,14 @@ img {
     padding: 15px 30px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
 }
 
 .info-producto button {
     border: none;
     background: none;
     background-color: #b7d2b6;
-    padding: 15px 10px;
+    padding: 15px 20px;
     border-radius: 10px;
     cursor: pointer;
     transition: all 1s ease;
@@ -143,6 +149,8 @@ img {
 
 footer {
     text-align: center;
+    margin-top: 20px;
+    padding: 50px;
 }
 
 .item-imagen {
@@ -150,5 +158,6 @@ footer {
     margin-right: 20%;
     margin-top: 10%;
 }
+
 
 
