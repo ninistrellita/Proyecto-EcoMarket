@@ -19,6 +19,12 @@ body {
     width: 100%;
 }
 
+.inicio {
+    text-align: center;
+    margin-top: 20px;
+    color: #2e7d32;
+}
+
 .logo-contenedor {
     display: flex;
     align-items: center;
@@ -57,7 +63,7 @@ body {
 }
 
 .hero-banner {
-    background-image: url('../Imagenes/banner.png');
+    background-image: url('../Imagenes/banner.jpeg');
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -158,6 +164,20 @@ footer {
     margin-right: 20%;
     margin-top: 10%;
 }
+
+.fotter-links a {
+    text-align: center ;
+}
+
+.fotter-links:hover {
+    color: #2e7d32;
+}
+
+.ver-mas {
+    text-align: center;
+    text-decoration: none;
+}
+   
 
 
 
