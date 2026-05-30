@@ -160,5 +160,17 @@ body {
     filter:contrast(120%);
 }
 
+@media (min-width: 768px) {
+    .contenedor {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 768px) {
+    .contenedor {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
 
 

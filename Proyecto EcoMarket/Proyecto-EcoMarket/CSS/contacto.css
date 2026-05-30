@@ -5,57 +5,133 @@
 }
 
 body {
-    margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    color: #1f2937;
-    background-image: url("../Imagenes/fono-contacto.jpeg");
-    background-size: cover;
-    background-position: center;
-}
-
-.card {
-    background-color: rgba(243, 244, 246, 0.753);
-    padding: 24px;
-    margin-bottom: 24px;
-    border-radius: 20px;
-    text-align: center;
-    margin-left: 200px;
-    margin-right: 200px;
-}
-
-.card h2{
-    margin-top: 0;
-    color: #2e7d32;
-    text-align: center;
-}
-
-.card p {
-    line-height: 1.7;
-}
-
-.card input{
-    border-radius: 20px;
-    padding: 20px;
-}
-
-h1 {
-    text-align: center;
-    color: #effff0;
-}
-
-.ubicacion{
-    text-align: center;
-    color: #2e7d32;
-}
-
-.ubicacion img{
-    border-radius: 20px;
-    margin-top: 20px;
-    margin-bottom: 50px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 header {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 30px;
+    align-items: center;
+    color: #115716;
 }
+
+.contacto {
+    padding: 50px 55px;
+    flex-direction: column;
+    box-shadow: 0 0px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    text-align: center;
+    width: 400px;
+    text-align: center;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 20px;
+}
+
+h2{
+    color: #115716;
+    font-size: 20px;
+}
+
+input, textarea {
+    padding: 17px 25px;
+    border: 1px solid #227833;
+    border-radius: 40px;
+    width: 100%;
+    background-color: #edffec;
+    outline: none;
+    border: 1px solid #ffffff;
+}
+
+button {
+    padding: 17px 25px;
+    border: none;
+    border-radius: 40px;
+    width: 100%;
+    background-color: #3dda5d;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+button:hover {
+    background-color: #115716;
+}
+
+.ubi img {
+   border-radius: 20px;
+   margin-bottom: 100px;
+   border: 5px solid #227833;
+}   
+
+.ubi h2 {
+    color: #115716;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 60px;
+    text-align: center;
+}
+
+footer {
+    background-color: #227833;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100px;
+    margin-top: 10px;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.fa-facebook {
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.fa-facebook:hover {
+    transform: scale(1.2);
+}
+
+.fa-instagram {
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.fa-instagram:hover {
+    transform: scale(1.2);
+}
+
+.fa-github {
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.fa-github:hover {
+    transform: scale(1.2);
+}
+
+
+
