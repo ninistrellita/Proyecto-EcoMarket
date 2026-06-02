@@ -73,7 +73,7 @@ button:hover {
    border-radius: 20px;
    margin-bottom: 100px;
    border: 5px solid #227833;
-}   
+}
 
 .ubi h2 {
     color: #115716;
@@ -133,5 +133,97 @@ textarea {
     transform: scale(1.2);
 }
 
+@media screen and (max-width: 768px) {
+
+
+    header {
+        padding: 30px 15px;
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    .contacto {
+        padding: 10px 15px;
+    }
+
+    .formulario {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+
+    .formulario h2 {
+        font-size: 1.1rem;
+        margin-top: 15px;
+        margin-bottom: 5px;
+    }
+
+    .formulario input[type="text"],
+    .formulario input[type="email"],
+    .formulario textarea {
+        width: 100%;
+        padding: 12px;
+        font-size: 1rem;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+        border-radius: 6px;
+    }
+
+    .formulario textarea {
+        height: 120px;
+        resize: vertical;
+    }
+
+
+    .formulario button {
+        width: 100%;
+        padding: 14px;
+        font-size: 1.1rem;
+        margin-top: 10px;
+        border-radius: 6px;
+    }
+
+
+    .ubi {
+        padding: 20px 15px;
+        text-align: center;
+    }
+
+    .ubi img {
+        width: 100%;
+        max-width: 450px;
+        height: auto;
+        border-radius: 8px;
+        margin-top: 10px;
+    }
+
+    section h2:not(.formulario h2) {
+        text-align: center;
+        font-size: 1.4rem;
+        margin-top: 35px;
+    }
+
+    .redes {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        padding: 20px 0;
+    }
+
+    .redes i {
+        font-size: 2.2rem;
+    }
+
+    footer {
+        text-align: center;
+        padding: 25px 15px;
+        font-size: 0.95rem;
+    }
+}
 
 
