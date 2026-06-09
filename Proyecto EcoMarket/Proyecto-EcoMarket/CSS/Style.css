@@ -227,6 +227,104 @@ footer {
     }
 }
 
+.banner-descuento {
+    background-image: url('../Imagenes/banner-descuento.jpeg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 120px;
+    margin-top: 100px;
+
+}
+
+.banner-descuento h2 {
+    color: #2e7d32;
+    font-size: 40px;
+    margin-top: 120px;
+}
+.contenido-banner {
+    color: white;
+}
+
+.contenido-banner h1 {
+    font-size: 50px;
+    margin-top: 100px;
+    animation: latido 4s ease-in-out infinite;
+}
+
+.contenido-banner p {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+@keyframes latido {
+    0% {
+      transform: scale(1); 
+    }
+    50% {
+      transform: scale(1.15); 
+    }
+    100% {
+      transform: scale(1); 
+    }
+}
+
+.contador {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;          
+}
+
+.numeros {
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 1; 
+}
+
+.text {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-top: 5px;
+}
 
 
+.boton {
+    background-color: none;
+    border: none;
+    background-color: #4acc17;
+    font-size: 20px;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-bottom: 100px;
+    transition: all .4s ease;
+}
 
+.boton a {
+    text-decoration: none;
+    color: white;
+}
+
+.boton:hover {
+    background-color: #56a039;
+    color: rgb(255, 255, 255);
+    transform: scale(1.2);
+}
+
+.time-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1ab414;
+    border-radius: 20px;
+    padding: 10px;
+}
